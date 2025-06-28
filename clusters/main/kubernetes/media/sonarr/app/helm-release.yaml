@@ -53,6 +53,10 @@ spec:
       main:
         enabled: true
         ingressClassName: "internal"
+        tls:
+          - hosts:
+              - sonarr2.${DOMAIN_0}
+            clusterIssuer: domain-0-wildcard
         hosts:
           - host: sonarr2.${DOMAIN_2}
             paths:
