@@ -40,12 +40,6 @@ spec:
     ingress:
       main:
         enabled: true
-        integrations:
-          traefik:
-            enabled: true
-            middlewares:
-              - name: internal-only
-              - name: auth
         tls:
           - hosts:
               - sonarr2.${DOMAIN_0}
