@@ -37,18 +37,41 @@ spec:
         accessKey: "${S3_MINIO_KEY_ID_V2}"
         secretKey: "${S3_MINIO_SECRET_KEY_V2}"
         encrKey: "${S3_MINIO_SECRET_KEY_V2}"
+    # ingress:
+    #   main:
+    #     enabled: true
+    #     tls:
+    #       - hosts:
+    #           - sonarr2.${DOMAIN_0}
+    #         clusterIssuer: domain-0-wildcard
+    #     hosts:
+    #       - host: sonarr2.${DOMAIN_0}
+    #         paths:
+    #           - path: /
+    #             pathType: Prefix
     ingress:
       main:
         enabled: true
-        tls:
-          - hosts:
-              - sonarr2.${DOMAIN_0}
-            clusterIssuer: domain-0-wildcard
+        ingressClassName: "internal"
         hosts:
-          - host: sonarr2.${DOMAIN_0}
+          - host: sonarr2.${DOMAIN_2}
             paths:
               - path: /
                 pathType: Prefix
+        integrations:
+          traefik:
+            enabled: false
+          # homepage:
+          #   enabled: true
+          #   name: Sonarr (Series)
+          #   group: "Media Manager"
+          #   siteMonitor: http://sonarr.sonarr.svc.cluster.local:8989
+          #   widget:
+          #     custom:
+          #       key: "${SONARR_SERIES_KEY}"
+          certManager:
+            enabled: true
+            certificateIssuer: general-le-prod
     persistence:
       config:
         volsync:
