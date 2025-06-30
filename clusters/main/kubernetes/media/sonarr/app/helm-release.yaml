@@ -53,6 +53,8 @@ spec:
       main:
         enabled: true
         ingressClassName: "internal"
+        annotations:
+          nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
         tls:
           - hosts:
               - sonarr2.${DOMAIN_0}
