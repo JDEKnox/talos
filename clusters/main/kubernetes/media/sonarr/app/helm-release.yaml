@@ -52,35 +52,47 @@ spec:
     ingress:
       main:
         enabled: true
-        ingressClassName: "internal"
-        annotations:
-          nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
-        tls:
-          - hosts:
-              - sonarr2.${DOMAIN_0}
-            clusterIssuer: domain-0-le-prod
+        ingressClassName: internal
         hosts:
           - host: sonarr2.${DOMAIN_0}
-            paths:
-              - path: /
-                pathType: Prefix
         integrations:
           traefik:
             enabled: false
-          # homepage:
-          #   enabled: true
-          #   name: Sonarr (Series)
-          #   group: "Media Manager"
-          #   siteMonitor: http://sonarr.sonarr.svc.cluster.local:8989
-          #   widget:
-          #     custom:
-          #       key: "${SONARR_SERIES_KEY}"
-          # certManager:
-          #   enabled: true
-          #   certificateIssuer: general-le-prod
           certManager:
             enabled: true
-            certificateIssuer: domain-0-le-prod
+            certificateIssuer: cloudflare
+    # ingress:
+    #   main:
+    #     enabled: true
+    #     ingressClassName: "internal"
+    #     annotations:
+    #       nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
+    #     tls:
+    #       - hosts:
+    #           - sonarr2.${DOMAIN_0}
+    #         clusterIssuer: domain-0-le-prod
+    #     hosts:
+    #       - host: sonarr2.${DOMAIN_0}
+    #         paths:
+    #           - path: /
+    #             pathType: Prefix
+    #     integrations:
+    #       traefik:
+    #         enabled: false
+    #       # homepage:
+    #       #   enabled: true
+    #       #   name: Sonarr (Series)
+    #       #   group: "Media Manager"
+    #       #   siteMonitor: http://sonarr.sonarr.svc.cluster.local:8989
+    #       #   widget:
+    #       #     custom:
+    #       #       key: "${SONARR_SERIES_KEY}"
+    #       # certManager:
+    #       #   enabled: true
+    #       #   certificateIssuer: general-le-prod
+    #       certManager:
+    #         enabled: true
+    #         certificateIssuer: domain-0-le-prod
     persistence:
       config:
         volsync:
