@@ -55,6 +55,9 @@ spec:
         ingressClassName: internal
         hosts:
           - host: sonarr2.${DOMAIN_0}
+            paths:
+              - path: /
+                pathType: Prefix
         integrations:
           traefik:
             enabled: false
