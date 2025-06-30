@@ -58,10 +58,10 @@ spec:
             paths:
               - path: /
                 pathType: Prefix
-        tls:
-          - hosts:
-              - sonarr2.${DOMAIN_0}
-            clusterIssuer: domain-0-le-prod
+        # tls:
+        #   - hosts:
+        #       - sonarr2.${DOMAIN_0}
+        #     clusterIssuer: domain-0-le-prod
         integrations:
           traefik:
             enabled: false
