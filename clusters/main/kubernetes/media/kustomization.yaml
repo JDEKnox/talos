@@ -6,3 +6,4 @@ resources:
   - sonarr/ks.yaml
   - radarr/ks.yaml
   - prowlarr/ks.yaml
+  - qbit-proxy/ks.yaml
