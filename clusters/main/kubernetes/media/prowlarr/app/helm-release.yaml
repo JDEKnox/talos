@@ -33,7 +33,7 @@ spec:
       s3v3:
         type: s3
         url: "${S3_MINIO_URL_V2}"
-        bucket: "${S3_MINIO_BUCKET_PREFIX}-v2-{{ .Chart.Name }}_v2"
+        bucket: "${S3_MINIO_BUCKET_PREFIX}-v2-{{ .Chart.Name }}"
         accessKey: "${S3_MINIO_KEY_ID_V2}"
         secretKey: "${S3_MINIO_SECRET_KEY_V2}"
         encrKey: "${S3_MINIO_SECRET_KEY_V2}"
