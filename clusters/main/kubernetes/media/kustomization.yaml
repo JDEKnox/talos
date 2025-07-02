@@ -7,4 +7,3 @@ resources:
   - radarr/ks.yaml
   - prowlarr/ks.yaml
   - qbit-proxy/ks.yaml
-  - qbittorrent/ks.yaml
