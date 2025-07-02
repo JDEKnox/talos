@@ -9,3 +9,4 @@ resources:
   - qbit-proxy/ks.yaml
   - qbittorrent/ks.yaml
   - overseerr/ks.yaml
+  - unpackerr/ks.yaml
