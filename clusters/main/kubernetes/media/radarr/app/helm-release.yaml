@@ -42,13 +42,13 @@ spec:
         enabled: true
         ingressClassName: internal
         hosts:
-          - host: radarr2.${DOMAIN_0}
+          - host: radarr.${DOMAIN_0}
             paths:
               - path: /
                 pathType: Prefix
         tls:
           - hosts:
-              - sonarr2.${DOMAIN_0}
+              - radarr.${DOMAIN_0}
             clusterIssuer: domain-0-le-prod
         integrations:
           traefik:

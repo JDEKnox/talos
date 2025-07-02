@@ -42,13 +42,13 @@ spec:
         enabled: true
         ingressClassName: internal
         hosts:
-          - host: prowlarr2.${DOMAIN_0}
+          - host: prowlarr.${DOMAIN_0}
             paths:
               - path: /
                 pathType: Prefix
         tls:
           - hosts:
-              - prowlarr2.${DOMAIN_0}
+              - prowlarr.${DOMAIN_0}
             clusterIssuer: domain-0-le-prod
         integrations:
           traefik:

@@ -42,13 +42,13 @@ spec:
         enabled: true
         ingressClassName: internal
         hosts:
-          - host: overseerr2.${DOMAIN_0}
+          - host: overseerr.${DOMAIN_0}
             paths:
               - path: /
                 pathType: Prefix
         tls:
           - hosts:
-              - overseerr2.${DOMAIN_0}
+              - overseerr.${DOMAIN_0}
             clusterIssuer: domain-0-le-prod
         integrations:
           traefik:
