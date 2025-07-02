@@ -4,7 +4,7 @@ apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:
   name: excalidraw
-  namespace: media
+  namespace: utilities
 spec:
   interval: 15m
   chart:
