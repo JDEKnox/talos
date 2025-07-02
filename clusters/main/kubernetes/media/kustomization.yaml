@@ -8,3 +8,4 @@ resources:
   - prowlarr/ks.yaml
   - qbit-proxy/ks.yaml
   - qbittorrent/ks.yaml
+  - overseerr/ks.yaml
