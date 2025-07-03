@@ -11,3 +11,4 @@ resources:
   - overseerr/ks.yaml
   - unpackerr/ks.yaml
   - tautulli/ks.yaml
+  - threadfin/ks.yaml
