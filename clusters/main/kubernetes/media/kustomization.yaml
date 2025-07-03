@@ -10,3 +10,4 @@ resources:
   - qbittorrent/ks.yaml
   - overseerr/ks.yaml
   - unpackerr/ks.yaml
+  - tautulli/ks.yaml
