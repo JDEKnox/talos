@@ -3,11 +3,11 @@ kind: Kustomization
 resources:
   - namespace.yaml
   - excalidraw/ks.yaml
+  - pvc-util.yaml
   - cloudflareddns/ks.yaml
   - cyberchef-v2/ks.yaml
   - filebot/ks.yaml
   - homepage/ks.yaml
   - it-tools/ks.yaml
   - open-webui/ks.yaml
-  - pvc-util.yaml
   - uptime-kuma/ks.yaml

@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 10m
-  path: clusters/main/kubernetes/utilities/cyberchef-v2/app
+  path: clusters/main/kubernetes/apps/utilities/cyberchef-v2/app
   prune: true
   sourceRef:
     kind: GitRepository

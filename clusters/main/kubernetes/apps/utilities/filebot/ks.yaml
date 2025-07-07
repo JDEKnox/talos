@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 10m
-  path: clusters/main/kubernetes/utilities/filebot/app
+  path: clusters/main/kubernetes/apps/utilities/filebot/app
   prune: true
   sourceRef:
     kind: GitRepository
