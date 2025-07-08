@@ -9,5 +9,4 @@ resources:
   - filebot/ks.yaml
   - homepage/ks.yaml
   - it-tools/ks.yaml
-  - open-webui/ks.yaml
   - uptime-kuma/ks.yaml
