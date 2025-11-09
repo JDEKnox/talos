@@ -46,7 +46,7 @@ spec:
         encrKey: "${S3_MINIO_SECRET_KEY_V2}"
     image:
       repository: binhex/arch-qbittorrentvpn
-      pullPolicy: IfNotPresent
+      pullPolicy: Always
       tag: latest
     securityContext:
       container:
