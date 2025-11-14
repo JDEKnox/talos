@@ -38,7 +38,7 @@ spec:
       persistence:
         config:
           volsync:
-            - name: config
+            - name: config3
               type: restic
               credentials: s3v3
               dest:
@@ -47,7 +47,7 @@ spec:
                 enabled: true
         downloads:
           volsync:
-            - name: downloads
+            - name: downloads3
               type: restic
               credentials: s3v3
               dest:

@@ -41,7 +41,7 @@ spec:
     persistence:
       config:
         volsync:
-          - name: config
+          - name: config3
             type: restic
             credentials: s3v3
             dest:
@@ -50,7 +50,7 @@ spec:
               enabled: true
       temp:
         volsync:
-          - name: temp
+          - name: temp3
             type: restic
             credentials: s3v3
             dest:
